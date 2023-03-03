@@ -1,4 +1,4 @@
-Blockly
+Chainly
 =======
 
 This is just a simple blockchain with basic functionality.
@@ -13,11 +13,11 @@ sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 ```
 
-Installing `blockly`
+Installing `chainly`
 
 ```
-git clone https://github.com/samweru/blockly
-cd blockly
+git clone https://github.com/samweru/chainly
+cd chainly
 composer update
 ```
 
@@ -61,13 +61,7 @@ http GET {host}:8080/mine
 5) Register nodes in different node
 
 ```
-http GET {host}:8081/register/nodes <<<"{'nodes':['localhost:8080','localhost:8082']}"
-```
-
-OR
-
-```
-echo {'nodes':['localhost:8080','localhost:8082']} | http GET {host}:8081/register/nodes
+http GET :8081/register/nodes nodes:='["localhost:8080","localhost:8082"]'
 ```
 
 6) View registered node

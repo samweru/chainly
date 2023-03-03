@@ -16,10 +16,10 @@
         "doctrine/cache": "^1.6",
         "pitsolu/merkle-tree": "v1.0.0-alpha",
         "strukt/key": "v1.0.0-alpha",
-	    "strukt/router": "v1.0.1-alpha",
+	    "strukt/router": "v1.1.2-alpha",
         "ext-apcu":"*",
 	    "zendframework/zend-http": "^2.7@dev",
-        "strukt/process": "v1.0.0-alpha"
+        "strukt/process": "v1.0.1"
     },
     "minimum-stability":"dev"
 }
