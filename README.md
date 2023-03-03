@@ -43,19 +43,19 @@ Alternitively, you can run a docker container. Please see steps in `bin/docker-s
 2) Add transactions to a node
 
 ```
-http -f POST {host}:8080/add/trx sender="sam" recipient="max" amount="100"
+http -f POST :8080/add/trx sender="sam" recipient="max" amount="100"
 ```
 
 3) View chain
 
 ```
-http GET {host}:8080/chain
+http GET :8080/chain
 ```
 
 4) Mine chain
 
 ```
-http GET {host}:8080/mine
+http GET :8080/mine
 ```
 
 5) Register nodes in different node
@@ -67,13 +67,13 @@ http GET :8081/register/nodes nodes:='["localhost:8080","localhost:8082"]'
 6) View registered node
 
 ```
-http GET {host}:8081/nodes
+http GET :8081/nodes
 ```
 
 7) View chain on node `8081` first then do consensus
 
 ```
-http GET {host}:8081/consensus
+http GET :8081/consensus
 ```
 
 8) View chain on node `8081` again.
